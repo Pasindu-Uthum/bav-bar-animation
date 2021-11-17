@@ -1,4 +1,4 @@
-### Welcome back, guys. ✌ In this article you will be learning how to create this beautiful navigation bar with HTML, CSS, and a little bit of JavaScript.
+### Welcome back, guys. ✌ In this article you will be learning how to create this beautiful navigation bar with HTML, CSS, and a little bit of JavaScript. This is a quick preview of what we are going to create today. 👇
 
 ![banner](./design/active-state.png)
 
@@ -67,7 +67,7 @@ It is very easy and simple to understand. So let's make this 😉. I have discus
 </nav>
 ```
 
-So as this is a navigation bar I decided to use the _\<nav>_ element to create this. Everything is inside the _\<nav>_ tag, and there is an unordered list in it to create the links.
+So as this is a navigation bar I decided to use the <code>\<nav></code> element to create this. Everything is inside the <code>\<nav></code> tag, and there is an unordered list in it to create the links.
 
 ## **CSS for Nav Bar**
 
@@ -87,7 +87,7 @@ nav ul {
 }
 ```
 
-Created a flex box and _justify-content: space-around_ to create equal spaces between images. _list-style-type: none_ to remove the bullets and _overflow: hidden_ to avoind overflowing the content. set a _bacground-color_ and _border-radius_ to look better. 😏
+Created a flex box and <code>justify-content: space-around</code> to create equal spaces between images. <code>list-style-type: none</code> to remove the bullets and <code>overflow: hidden</code> to avoind overflowing the content. set a <code>bacground-color</code> and <code>border-radius</code> to look better. 😏
 
 ### **\<li> Tag**
 
@@ -102,7 +102,7 @@ Created a flex box and _justify-content: space-around_ to create equal spaces be
 </span>
 ```
 
-The images are created inside the _\<span>_ tag. And you can see there are two images inside the _\<span>_ tag. One is the black and white and the other is color image. the _data-color_ attribute in the _\<span>_ tag is made for the function of JavaScript. You can see it at the end of this article.
+The images are created inside the <code>\<span></code> tag. And you can see there are two images inside the<code>\<span></code> tag. One is the black and white and the other is color image. the <code>data-color</code> attribute in the<code>\<span></code> tag is made for the function of JavaScript. You can see it at the end of this article.
 
 ```css
 nav ul li span {
@@ -113,7 +113,7 @@ nav ul li span {
 }
 ```
 
-These are the stylings for _\<span>_ tag. _display: block_ unless we can't change the padding values because it is a inline element by default. _position: relative_ because the colored image is going to be absolute to that element.
+These are the stylings for <code>\<span></code> tag. <code>display: block</code> unless we can't change the padding values because it is a inline element by default. <code>position: relative</code> because the colored image is going to be absolute to that element.
 
 ```css
 img {
@@ -121,9 +121,9 @@ img {
 }
 ```
 
-Set an fixed _width_ to the image.
+Set an fixed <code>width</code> to the image.
 
-The most important part is positioning the colored image. I position the colored image right in front of the black and white image. So that the black and white image is under the colored image. Then I set the colored image's _opacity: 0_ so that the colored image cannot be seen. But still, the colored image is in front of the black and white image. So the hover effect is to bring back the opacity with a transition. And it will be like an animation of color-changing 😁.
+The most important part is positioning the colored image. I position the colored image right in front of the black and white image. So that the black and white image is under the colored image. Then I set the colored image's<code>opacity: 0</code> so that the colored image cannot be seen. But still, the colored image is in front of the black and white image. So the hover effect is to bring back the opacity with a transition. And it will be like an animation of color-changing 😁.
 
 ```css
 .color-image {
@@ -196,7 +196,7 @@ img {
 
 ## **JAVASCRIPT**
 
-This is the JavaScript part. It is very simple. All it does is change the _background-color_ of the document when an icon is clicked. (Just for fun 😂). So here it is...
+This is the JavaScript part. It is very simple. All it does is change the <code>background-color</code> of the document when an icon is clicked. (Just for fun 😂). So here it is...
 
 ```javascript
 const link = document.querySelectorAll("span"); // Getting all the span elements
@@ -210,7 +210,7 @@ link.forEach((item) => {
 });
 ```
 
-So in here I have selected all the _\<span>_ elements using _querySelectorAll_ and when a _\<span>_ element is clicked, it takes the _data-color_ attribute of that element and set that color as the _background-color_ of the document.
+So in here I have selected all the <code>\<span></code> elements using <code>querySelectorAll</code> and when a <code>\<span></code> element is clicked, it takes the <code>data-color</code> attribute of that element and set that color as the <code>bacground-color</code> of the document.
 
 ## 🔗 **LINKS**
 
